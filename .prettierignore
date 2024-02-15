@@ -1,4 +1,5 @@
 LICENSE
+sonar-project.properties
 yarn.lock
 .yarn/
 .gitignore
