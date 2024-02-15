@@ -1,8 +1,12 @@
 {
   "steps": [
     {
-      "name": "Example hook",
-      "command": "echo \"Hello world!\""
+      "name": "eslint",
+      "command": "yarn exec eslint `git diff --name-only --cached --diff-filter=d '*.ts' '*.js'`"
+    },
+    {
+      "name": "prettier",
+      "command": "yarn exec prettier --check '*' '.*' `git diff --name-only --cached --diff-filter=d`"
     }
   ]
 }
