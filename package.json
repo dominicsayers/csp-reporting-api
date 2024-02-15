@@ -1,3 +1,6 @@
 {
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.0",
+  "devDependencies": {
+    "@escape.tech/mookme": "^2.5.0"
+  }
 }
