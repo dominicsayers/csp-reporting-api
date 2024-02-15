@@ -8,7 +8,12 @@ module.exports = {
       env: {
         node: true
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: [
+        ".eslintrc.js",
+        "babel.config.js",
+        "commitlint.config.js",
+        "jest.config.ts"
+      ],
       parserOptions: {
         sourceType: "script",
         project: "./tsconfig.eslint.json"
@@ -19,6 +24,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module"
   },
+  ignorePatterns: ["coverage/", "out/"],
   rules: {
     quotes: "off",
     semi: "off",
