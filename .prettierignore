@@ -1,0 +1,7 @@
+LICENSE
+sonar-project.properties
+yarn.lock
+.yarn/
+.gitignore
+.prettierignore
+.tool-versions

@@ -1,0 +1,16 @@
+{
+  "steps": [
+    {
+      "name": "eslint",
+      "command": "yarn exec eslint `git diff --name-only --cached --diff-filter=d '*.ts' '*.js'`"
+    },
+    {
+      "name": "markdown",
+      "command": "git diff --exit-code --cached --diff-filter=d '*.md' '*.markdown' || yarn exec markdownlint-cli2 `git diff --name-only --cached --diff-filter=d '*.md' '*.markdown'`"
+    },
+    {
+      "name": "prettier",
+      "command": "yarn exec prettier --check '*' '.*' `git diff --name-only --cached --diff-filter=d`"
+    }
+  ]
+}
